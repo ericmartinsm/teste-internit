@@ -1,20 +1,77 @@
-//---------------------------------------------
-//
-//  Slider Component
-//
-//    1. Imports
-//    2. Component
-//
-//---------------------------------------------
+#carouselExampleIndicators {
+    margin-top: 62px;
+    display: none;
+    height: 672px!important;
+}
 
-//---------------------------------------------
-// 1. Imports
-//---------------------------------------------
+.carousel-indicators {
+    margin-top: 69px;
+    z-index   : 0;
+    top       : 22vw;
 
-@import "../variables";
+    .active {
+        background-color: #54c5d0 !important;
+        height          : 100px !important;
 
-//---------------------------------------------
-// 2. Component
-//---------------------------------------------
+        span {
+            color     : #ffffff;
+            visibility: visible;
+            bottom    : 0px;
+            top       : 87%;
+        }
+    }
 
-// Nothing here yet
+    button {
+        position                  : relative;
+        width                     : 20px !important;
+        height                    : 70px !important;
+        border-bottom-left-radius : 10px !important;
+        border-bottom-right-radius: 10px !important;
+        background-clip           : border-box !important;
+        opacity                   : 1 !important;
+        background-color          : blue;
+
+        span {
+            visibility: hidden;
+            position  : absolute;
+            right     : -490px;
+            top       : 10%;
+        }
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    #carouselExampleIndicators {
+        display: block!important;
+
+    }
+}
+
+@media (min-width: 770px) {
+    .carousel-indicators{
+        top       : 13vw; 
+    }
+}
+@media (min-width: 910px) {
+    .carousel-indicators{
+        top       : 16vw; 
+    }
+}
+
+@media (min-width: 1100px) {
+    .carousel-indicators{
+        top       : 18vw; 
+    }
+}
+@media (min-width: 1350px) {
+    .carousel-indicators{
+        top       : 21vw; 
+    }
+}
+@media (min-width: 1720px) {
+    .carousel-indicators{
+        top       : 23vw; 
+    }
+}

@@ -1,41 +1,75 @@
 footer {
     padding-bottom: 31px;
-    margin-top: 20px;
+    margin-top    : 20px;
 
     .footer-content {
         margin-top: 30px;
 
         .endereco {
             img {
-                margin-top: 6px;
+                margin-top  : 6px;
                 margin-right: 5px;
             }
 
             p {
-                color: #ffff;
+                color    : #ffff;
                 font-size: 13px;
             }
         }
 
         .contato {
             img {
-                margin-top: 6px;
+                margin-top  : 6px;
                 margin-right: 5px;
             }
 
             p {
-                color: #ffff;
+                color    : #ffff;
                 font-size: 13px;
             }
         }
     }
 
-    .small-logo {
-        right: 0;
+    .small-logo-content {
+        position: relative;
+        .small-logo {
+            right: 0;
+            position: absolute;
+            top: -109px;
+            margin-right: 106px;
+        }
+
+    }
+
+
+    .simbol-footer {
+        display: block;
+
+        .simbol-content {
+            background-color: aliceblue;
+            position        : relative;
+
+            img {
+                width   : 277px;
+                height  : 397px;
+                position: absolute;
+                top     : -263px;
+                z-index : -1;
+            }
+        }
     }
 
     hr {
-        border-top: 1px solid #000000;
+        border-top   : 1px solid #000000;
         border-bottom: 1px solid rgb(92, 88, 88);
     }
+
+}
+
+@media (min-width: 768px) {
+
+    .simbol-footer {
+        display: none;
+    }
+
 }
